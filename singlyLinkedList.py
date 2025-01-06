@@ -28,6 +28,9 @@ class sll:
         self.traverse()
 
     def traverse(self):
+        if self.start ==None:
+            print("empty list")
+            return
         n = self.start
         while n != None:
             print(n.value, end=" ")
@@ -89,12 +92,12 @@ class sll:
                 slow.next = fast.next
         # self.traverse()
 
-head = sll()
-
-head.insertAtStart(1)
-head.insertAtLast(3)
-head.insertAfter(1, 2)
-head.insertAfter(3, 4)
-head.deleteFirst()
-head.deleteLast()
-head.deleteItem(1)
+# head = sll()
+#
+# head.insertAtStart(1)
+# head.insertAtLast(3)
+# head.insertAfter(1, 2)
+# head.insertAfter(3, 4)
+# head.deleteFirst()
+# head.deleteLast()
+# head.deleteItem(1)
